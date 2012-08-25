@@ -1,0 +1,27 @@
+$series = array("name"=>"N51", 
+                "data"=>array(1024, 
+                              array("y"=>2048, 
+                                    "events"=>array("mouseOver"=>'function(){$reporting.html(\'description of value\');}') 
+                                   ), 
+                              4096) 
+               ); 
+json_encode($series); 
+?> 
+
+output: 
+
+{"name":"N51","data":[1024,{"y":2048,"events":{"mouseOver":"function(){$reporting.html('description of value');}"}},4096]} 
+
+
+
+
+$series = array( 
+                "aps"=>array("alert"=>array("body"=>"Bob wants to play poker", "action-loc-key" => "PLAY")), 
+			 "badge"=>"1"               
+               "acme1"=>"bar",
+		     "acme2"=>array["bang","wiz"]
+			); 
+
+
+{"aps" : {"alert" : { "body" : "Bob wants to play poker", "action-loc-key" : "PLAY" },         "badge" : 5,     },     "acme1" : "bar",     "acme2" : [ "bang",  "whiz" ] }
+
